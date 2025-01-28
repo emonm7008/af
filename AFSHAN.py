@@ -357,7 +357,7 @@ class Main:
 
         print(logo)
 
-        #os.system('espeak -a 200 "Welcome AXN Mahmud project Random Clone"')
+        os.system('espeak -a 200 "Welcome AFSHAN Mahmud project Random Clone"')
 
         print("\033[1;32m══\x1b[1;91m══\033[1;32m══\033[1;31m══\x1b[1;94m══\x1b[1;96m══\x1b[1;91m══\033[1;32m═DCCS-TEAM═\033[1;31m══\x1b[1;94m══\x1b[1;96m══\x1b[1;91m══\033[1;32m═══\033[1;31m══\x1b[1;94m══\x1b[1;96m══\x1b[1;91m══\033[1;32m══\033[1;31m══\x1b[1;94m══\x1b[1;96m══\x1b[1;91m══\033[1;32m══\033[1;31m══\x1b[1;94m══\x1b[1;96m═══")
 
@@ -369,7 +369,7 @@ class Main:
 
         Alif =input(" [?] Choose : ")
 
-        #s.system('xdg-open https://www.facebook.com/asiea.asiea.94')
+        os.system('xdg-open https://www.facebook.com/asiea.asiea.94')
 
         if Alif in ["1", "01"]:
 
@@ -393,7 +393,7 @@ def num():
 
     print(' [+] EXAMPLE : 017, 018, 019, 016, 013, 014 ')
 
-    #s.system('espeak -a 200 "Select your Number"')
+    s.system('espeak -a 200 "Select your Number"')
 
     kode = input(' [?] Enter sim code: ')
 
@@ -407,13 +407,13 @@ def num():
 
     print(' [+] EXAMPLE : 3000, 5000, 10000, 50000 ')
 
-    #s.system('espeak -a 200 "select Crack Limit"')
+    os.system('espeak -a 200 "select Crack Limit"')
 
     limit = int(input(' [?] Crack Your Limit : '))
 
     for nmbr in range(limit):
 
-        nmp = ''.join(random.choice(string.digits) for _ in range(4)
+        nmp = ''.join(random.choice(string.digits) for _ in range(4))
 
         user.append(nmp)
 
@@ -423,7 +423,7 @@ def num():
 
         print(logo)
 
-        #s.system('espeak -a 200 "Random cloning Started GOJO SATURO"')
+        os.system('espeak -a 200 "Random cloning Started GOJO SATURO"')
 
         tl = str(len(user))
 
