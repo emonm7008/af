@@ -314,7 +314,7 @@ os.system('xdg-open https://github.com/SF-AXN')
 
 
 
-#logo = ("""
+logo = ("""
 
       \x1b[37;41m\t WELLCOME TO AFSHAN TOOL\x1b[0;m\n\n\x1b[1;37m                          
 {R}━═━═══━═━═━═━═━━═━═━══━═━═━═━═━━═━═━══━━══━═━═━═━═━══{w}
