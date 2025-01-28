@@ -393,7 +393,7 @@ def num():
 
     print(' [+] EXAMPLE : 017, 018, 019, 016, 013, 014 ')
 
-    s.system('espeak -a 200 "Select your Number"')
+    os.system('espeak -a 200 "Select your Number"')
 
     kode = input(' [?] Enter sim code: ')
 
